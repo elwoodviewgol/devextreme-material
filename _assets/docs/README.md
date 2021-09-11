@@ -1,7 +1,8 @@
 # Documents  
-
+1. [Getting Started](_00__getting-started.md)
 ---  
-
+  
+## Other  
 1. [Return to root](https://github.com/elwoodviewgol/devextreme-material)   
 1. [Assets](../)  
 1. [Documents](./) 
