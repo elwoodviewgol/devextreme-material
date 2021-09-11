@@ -22,6 +22,9 @@ $demo-alpha: transparent; // rgba(0, 255, 255, 0.025);
         }
         footer {
             background-color: $demo-alpha;
+            padding: 25px 0 100px;
+            border-top: 1px solid #EEEEEE;
+            margin-top: 50px;
         }
     }
     .column {
