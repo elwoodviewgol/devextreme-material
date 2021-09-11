@@ -99,3 +99,41 @@ Update the core HTML file to include [Material Icons](https://fonts.google.com/i
 </body>
 </html>
 ```  
+  
+**Update Core SCSS**  
+```css  
+html, body {
+    margin: 0;
+    padding:0;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+```   
+  
+**Update angular.json**   
+In the "./project/angular.json" file update the style reference.   
+```json  
+[{
+	"projects": {
+		"project": {
+			"architect": {
+				"build": {
+					"options": {
+						"styles": [
+							"node_modules/devextreme/dist/css/dx.material.purple.light.css",
+              "node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+							"src/styles.scss"
+						]
+					}
+				}
+			}
+		}
+	}
+}]
+```  
+Learn more about the different [Predefined Themes](https://js.devexpress.com/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) DevExtreme offers.  
+  
+---  
+  
+> "DevExtreme + Angular Material" project | Elwood Berry, Senior Frontend Developer @ eberry@viewgol.com
