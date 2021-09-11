@@ -1,19 +1,20 @@
 
-<div fxLayout="row">
-    <div fxFlex="25%">Left</div>
-    <div fxFlex="50%" fxLayout="column">
+<div fxLayout="row" class="demo-container">
+    <div fxFlex="25%" class="row">Left</div>
+    <div fxFlex="50%" fxLayout="column" class="row">
 
         <header>
             Uranium Has Loaded
         </header>
         <section fxLayout="row">
-            <div>
+            <div fxFlex="48%" class="column">
                 Show An angular component here
                 <mat-card>Simple card</mat-card>
             </div>
             <mat-divider [vertical]="true"></mat-divider>
-            <div>
+            <div fxFlex="48%" class="column">
                 Show An DevExtreme component here
+                <dx-tag-box></dx-tag-box>
             </div>
         </section>
         <footer>
@@ -21,7 +22,7 @@
         </footer>
 
     </div>
-    <div fxFlex="25%">Right</div>
+    <div fxFlex="25%" class="row">Right</div>
 </div>
 
 <!--

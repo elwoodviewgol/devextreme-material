@@ -1,6 +1,35 @@
 
 
 
+
+// DEMO ONLY
+// ------------------------------------- 
+$demo-alpha: transparent; // rgba(0, 255, 255, 0.025);
+
+.demo-container {
+    background-color: $demo-alpha;
+
+    .row{
+        background-color: $demo-alpha;
+
+        header {
+            background-color: $demo-alpha;
+            padding: 100px 0px 30px;
+            font-size: 24px;
+        }
+        section {
+            background-color: $demo-alpha;
+        }
+        footer {
+            background-color: $demo-alpha;
+        }
+    }
+    .column {
+        padding: 0 15px;
+    }
+}
+
+
 // -------------------------------------  
 // "DevExtreme + Angular Material" project
 // Author: Elwood Berry, Senior Frontend Developer @ eberry@viewgol.com
