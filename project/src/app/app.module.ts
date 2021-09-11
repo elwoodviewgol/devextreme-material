@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { AppRoutingModule } from './app-routing.module';
+// LIBRARY  
+import { MaterialModule } from '../assets/libs/material/material.module';
+import { DevextremeModule } from '../assets/libs/devextreme/devextreme.module';
+
+// ROUTING
+import { AppRoutingModule } from './app-routing.module'; 
+
+// COMPONENTS  
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -10,7 +18,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    DevextremeModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

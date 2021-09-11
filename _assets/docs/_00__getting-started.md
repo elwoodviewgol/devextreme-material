@@ -5,7 +5,8 @@ Baseline Project For Developing With DevExtreme Angular Components + Angular Mat
 1. [Prerequisites](#prerequisites)    
 1. [Create Angular Project](#create-angular-project)  
 1. [Packages](#packages)  
-1. [House Keeping]()
+1. [House Keeping](#house-keeping)  
+1. [Library Modules]()
   
 ---  
   
@@ -134,6 +135,83 @@ In the "./project/angular.json" file update the style reference.
 ```  
 Learn more about the different [Predefined Themes](https://js.devexpress.com/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) DevExtreme offers.  
   
+**Update app.module.ts**  
+Adding fxLayout to the core component. 
+```ts  
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+// ROUTING
+import { AppRoutingModule } from './app-routing.module'; 
+
+// COMPONENTS  
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FlexLayoutModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```  
+  
+## Library Modules  
+  
+Create a central **Angular Material Module**.  
+```
+$ ng g module ../assets/libs/material  
+```
+
+Create a central **DevExtreme Module**.  
+```  
+ng g module ../assets/libs/devextreme  
+```  
+  
+Update **app.module.ts**  
+```ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+// LIBRARY  
+import { MaterialModule } from '../assets/libs/material/material.module';
+import { DevextremeModule } from '../assets/libs/devextreme/devextreme.module';
+
+// ROUTING
+import { AppRoutingModule } from './app-routing.module'; 
+
+// COMPONENTS  
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MaterialModule,
+    DevextremeModule,
+    FlexLayoutModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```  
+
+
+
+
+
 ---  
   
 > "DevExtreme + Angular Material" project | Elwood Berry, Senior Frontend Developer @ eberry@viewgol.com
