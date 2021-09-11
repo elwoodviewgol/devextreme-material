@@ -1,10 +1,11 @@
 # Getting Started  
-Baseline Project For Developing With DevExtreme Angular Components + Angular Material Components.
----  
+  
+Baseline Project For Developing With DevExtreme Angular Components + Angular Material Components.  
   
 1. [Prerequisites](#prerequisites)    
-1. [Create Angular Project](#)  
+1. [Create Angular Project](#create-angular-project)  
 1. [Packages](#packages)  
+1. [House Keeping]()
   
 ---  
   
@@ -49,7 +50,6 @@ $ npm i devextreme-angular
 ### Angular Material  
 See [documentation](https://www.npmjs.com/package/@angular/material) on Angular Material
 ```  
-  
 $ npm i @angular/material  
 ```   
   
@@ -65,3 +65,37 @@ See [documentation](https://www.npmjs.com/package/@angular/cdk) on Angular CDK
 ```  
 $ npm i @angular/cdk  
 ``` 
+  
+## House Keeping  
+
+**Update App Selector** (optional)  
+This is purely cosmetic. Not required.
+```ts  
+@Component({
+  selector: 'uranium',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+``` 
+  
+**Update Core HTML**  
+Update the core HTML file to include [Material Icons](https://fonts.google.com/icons) and [Roboto](https://fonts.google.com/specimen/Roboto) Google Fonts.  
+```html  
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Uranium</title>
+  <base href="/">
+</head>
+<body>
+  <uranium></uranium>
+</body>
+</html>
+```  

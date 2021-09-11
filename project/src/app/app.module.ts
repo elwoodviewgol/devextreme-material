@@ -16,3 +16,9 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+// -------------------------------------  
+// "DevExtreme + Angular Material" project
+// Author: Elwood Berry, Senior Frontend Developer @ eberry@viewgol.com
+// @2021 

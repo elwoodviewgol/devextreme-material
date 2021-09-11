@@ -33,3 +33,10 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span')?.textContent).toContain('project app is running!');
   });
 });
+
+
+
+// -------------------------------------  
+// "DevExtreme + Angular Material" project
+// Author: Elwood Berry, Senior Frontend Developer @ eberry@viewgol.com
+// @2021 

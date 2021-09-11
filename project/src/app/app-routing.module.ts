@@ -8,3 +8,9 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+// -------------------------------------  
+// "DevExtreme + Angular Material" project
+// Author: Elwood Berry, Senior Frontend Developer @ eberry@viewgol.com
+// @2021 
